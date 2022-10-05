@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Корзина товаров на React
+##  Проект создавался и верстался с приминением пропроцессора SCSS, БЭМ нэйминг, после был применен компонетный подход React 
+
+![image](https://user-images.githubusercontent.com/51984125/194129039-1aa548e8-ee7b-4acd-a88b-dc216cb9821c.png)
+
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
