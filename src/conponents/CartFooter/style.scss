@@ -1,0 +1,33 @@
+@import "./../App/_vars.scss";
+
+.cart-footer {
+    display: grid;
+    grid-template-columns: 5fr 3fr 4fr;
+    padding: 19px 0;
+    background: #EAEFF2;
+    column-gap:30px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (max-width: $mobile-xs) {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+
+    }
+
+}
+
+.cart-footer__count {
+    grid-column-start: 2;
+    @media(max-width: $mobile) {
+        grid-column-start: 1;
+
+    }
+}

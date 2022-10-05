@@ -1,0 +1,60 @@
+@import "./../App/_vars.scss";
+
+.product {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 3fr) 1fr;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    column-gap: 30px;
+
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(215, 215, 215);
+
+    @media (max-width: $mobile) {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(60px, auto);
+        column-gap: 15px;
+        row-gap: 10px;
+
+    }
+}
+
+.product>* {
+    align-self: center;
+}
+
+.product__img {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+
+    @media (max-width: $mobile) {
+        grid-column: 1/3;
+    }
+
+}
+
+.product__title {
+    @media (max-width: $mobile) {
+        grid-column: 3/-1;
+    }
+}
+
+.product__count {
+    @media (max-width: $mobile) {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+}
+
+.product__price {
+    @media (max-width: $mobile) {
+        grid-column: 3/6;
+        justify-self: center;
+    }
+}
+
+.product__controls {
+    justify-self: center;
+}
